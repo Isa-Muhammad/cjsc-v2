@@ -40,3 +40,19 @@
 // console.log(typeof year);
 // // typeof bug returns object instead of null
 // console.log(typeof null);
+
+/* Topic: let, const and var */
+
+let age = 30;
+age = 31;
+
+const birthYear = 1998;
+// birthYear = 1999; // error
+// const job; // error
+
+var job = "programmer";
+job = "teacher";
+
+lastName = "Smith";
+console.log(lastName);
+// //property was created on the global object not a variable in the current scope(bad practice). Using var also causes this behaviour

@@ -120,14 +120,35 @@
 // § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is
 //   1.76 m tall.
 
-const massMark = 78;
-const heightMark = 1.69;
-const massJohn = 92;
-const heightJohn = 1.95;
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
 
-const BMIMark = massMark / heightMark ** 2;
-const BMIJohn = massJohn / (heightJohn * heightJohn);
-console.log(BMIMark, BMIJohn);
+// const BMIMark = massMark / heightMark ** 2;
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+// console.log(BMIMark, BMIJohn);
 
-const markHigherBMI = BMIMark > BMIJohn;
-console.log(markHigherBMI);
+// const markHigherBMI = BMIMark > BMIJohn;
+// console.log(markHigherBMI);
+
+/* Topic: Strings and Template Literals */
+
+const firstName = "Isa";
+const job = "front end dev";
+const birthYear = 1998;
+const year = 2026;
+
+// const isa =
+//   "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+// console.log(isa);
+
+const isaNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+console.log(isaNew);
+
+console.log(`Just a regular string...`);
+
+console.log("String with \n multiple \n lines");
+console.log(`String
+multiple
+lines`);

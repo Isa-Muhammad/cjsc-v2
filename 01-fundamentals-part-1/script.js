@@ -184,18 +184,40 @@
 // 2. Use a template literal to include the BMI values in the outputs. Example:
 //    "Mark's BMI (28.3) is higher than John's (23.9)!"
 
-const massMark = 78;
-const heightMark = 1.69;
-const massJohn = 92;
-const heightJohn = 1.95;
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
 
-const BMIMark = massMark / heightMark ** 2;
-const BMIJohn = massJohn / (heightJohn * heightJohn);
-console.log(BMIMark, BMIJohn);
+// const BMIMark = massMark / heightMark ** 2;
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+// console.log(BMIMark, BMIJohn);
 
-// Task 1
-if (BMIMark > BMIJohn) {
-  console.log(`Mark's BMI (${BMIMark}) is higher than John's ${BMIJohn})!`);
-} else {
-  console.log(`John's BMI (${BMIJohn}) is higher than Mark's ${BMIMark})!`);
-}
+// // Task 1
+// if (BMIMark > BMIJohn) {
+//   console.log(`Mark's BMI (${BMIMark}) is higher than John's ${BMIJohn})!`);
+// } else {
+//   console.log(`John's BMI (${BMIJohn}) is higher than Mark's ${BMIMark})!`);
+// }
+
+/* Topic: Type Conversion and Coercion */
+
+// // Type conversion
+const inputYear = "1998";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Isa")); // NaN = Not a Number
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// // Type coercion
+console.log("I am " + 23 + " years old"); // + operator converts number to string
+console.log("23" - "10" - 3); // - operator converts string to number
+console.log("23" * "2"); // * operator converts string to number
+console.log("23" / "2"); // / operator converts string to number
+
+let n = "1" + 1; // '11'
+n = n - 1; // '11' - 1 = 10
+console.log(n);

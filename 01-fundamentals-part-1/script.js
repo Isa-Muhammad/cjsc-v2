@@ -316,27 +316,44 @@
 
 /* Topic: The switch statement */
 
-const day = "monday";
+// const day = "monday";
 
-switch (day) {
-  case "monday":
-    console.log("Plan course structure");
-    console.log("Go to coding meetup");
-    break;
-  case "tuesday":
-    console.log("Prepare theory videos");
-    break;
-  case "wednesday":
-  case "thursday":
-    console.log("Write code examples");
-    break;
-  case "friday":
-    console.log("Record videos");
-    break;
-  case "saturday":
-  case "sunday":
-    console.log("Enjoy the weekend :D");
-    break;
-  default:
-    console.log("Not a valid day!");
+// switch (day) {
+//   case "monday":
+//     console.log("Plan course structure");
+//     console.log("Go to coding meetup");
+//     break;
+//   case "tuesday":
+//     console.log("Prepare theory videos");
+//     break;
+//   case "wednesday":
+//   case "thursday":
+//     console.log("Write code examples");
+//     break;
+//   case "friday":
+//     console.log("Record videos");
+//     break;
+//   case "saturday":
+//   case "sunday":
+//     console.log("Enjoy the weekend :D");
+//     break;
+//   default:
+//     console.log("Not a valid day!");
+// }
+
+/* Topic: Statements and expressions */
+
+//expressions
+//The following are expressions because it will produce a js value
+3 + 4;
+1991;
+true && false && !false;
+
+//Statements
+//These do not produce values. These are sentences that translate our actions
+//Statements end with semicolons
+if (23 > 10) {
+  const str = "23 is bigger";
 }
+const me = "isa";
+console.log(`im ${2027 - 1998} years old. ${me}`);

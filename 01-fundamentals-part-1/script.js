@@ -343,17 +343,37 @@
 
 /* Topic: Statements and expressions */
 
-//expressions
-//The following are expressions because it will produce a js value
-3 + 4;
-1991;
-true && false && !false;
+// //expressions
+// //The following are expressions because it will produce a js value
+// 3 + 4;
+// 1991;
+// true && false && !false;
 
-//Statements
-//These do not produce values. These are sentences that translate our actions
-//Statements end with semicolons
-if (23 > 10) {
-  const str = "23 is bigger";
+// //Statements
+// //These do not produce values. These are sentences that translate our actions
+// //Statements end with semicolons
+// if (23 > 10) {
+//   const str = "23 is bigger";
+// }
+// const me = "isa";
+// console.log(`im ${2027 - 1998} years old. ${me}`);
+
+/* Topic: The Conditional (Ternary) Operator */
+
+const age = 23;
+// age >= 18
+//   ? console.log("I like to drink wine 🍷")
+//   : console.log("I like to drink water 💧");
+
+const drink = age >= 18 ? "wine 🍷" : "water 💧";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = "wine 🍷";
+} else {
+  drink2 = "water 💧";
 }
-const me = "isa";
-console.log(`im ${2027 - 1998} years old. ${me}`);
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"}`);
